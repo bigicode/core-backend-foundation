@@ -36,7 +36,7 @@ A production‑ready Node.js backend boilerplate with a complete authentication 
 ### Installation
 
 1. **Clone the repository**
-   git clone https://github.com/your-username/backend-core-foundation.git
+   git clone https://github.com/bigicode/core-backend-foundation.git
    npm install
    cp .env.example .env
 
@@ -70,14 +70,14 @@ Upload Avatar: PUT /api/users/avatar with form-data key "avatar" (file upload)
 
 ## Environment Variables
 Variable	Description	Default
-PORT	Server port	5000
-NODE_ENV	Environment (development, staging, production)	development
-JWT_SECRET	Secret key for JWT signing	Required
-DB_HOST	MySQL host	localhost
-DB_USER	MySQL username	root
-DB_PASSWORD	MySQL password	(empty)
-DB_NAME	MySQL database name	Required
-BASE_URL	Base URL for constructing absolute image URLs	http://localhost:5000
+``PORT	Server port	5000<br>
+NODE_ENV	Environment (development, staging, production)	development<br>
+JWT_SECRET	Secret key for JWT signing	Required<br>
+DB_HOST	MySQL host	localhost<br>
+DB_USER	MySQL username	root<br>
+DB_PASSWORD	MySQL password	(empty)<br>
+DB_NAME	MySQL database name	Required<br>
+BASE_URL	Base URL for constructing absolute image URLs	http://localhost:5000``
 
 
    
