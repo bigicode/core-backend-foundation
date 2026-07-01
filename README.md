@@ -26,35 +26,6 @@ A production‑ready Node.js backend boilerplate with a complete authentication 
 - **Security:** express-rate-limit, CORS
 - **Language:** JavaScript (CommonJS)
 
-##  Project Structure
-
-backend/
-├── src/
-│ ├── config/
-│ │ └── index.js # Centralised environment config with Joi validation
-│ ├── modules/
-│ │ └── user/ # User feature module
-│ │ ├── user.routes.js # Route definitions (login, register, avatar, profile)
-│ │ ├── user.controller.js # Request/response handling
-│ │ ├── user.service.js # Business logic (auth, uploads)
-│ │ └── user.repository.js # Database queries
-│ ├── middleware/
-│ │ ├── auth.js # JWT verification
-│ │ ├── role.js # Role‑based access control
-│ │ ├── errorHandler.js # Global error handling
-│ │ └── rateLimiter.js # Rate limiting for security
-│ ├── utils/
-│ │ ├── AppError.js # Base custom error class
-│ │ ├── errors.js # Specific error types (Validation, Unauthorized, etc.)
-│ │ ├── logger.js # Winston logging configuration
-│ │ └── upload.js # Multer configuration for file uploads
-│ └── app.js # Express application entry point
-├── uploads/ # Directory for uploaded profile images
-├── logs/ # Log files (error.log, combined.log)
-├── .env # Environment variables
-└── package.json
-
-
 ##  Getting Started
 
 ### Prerequisites
@@ -75,7 +46,7 @@ backend/
 
 Create a database (e.g., node_app) and run the following SQL to create the users table:
 
-sql
+``sql
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   email VARCHAR(255) NOT NULL UNIQUE,
@@ -83,7 +54,7 @@ CREATE TABLE users (
   role VARCHAR(20) DEFAULT 'user',
   avatar VARCHAR(255),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+);``
 
 npm run dev to start server
 
