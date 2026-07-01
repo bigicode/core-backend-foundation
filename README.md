@@ -70,13 +70,13 @@ Upload Avatar: PUT /api/users/avatar with form-data key "avatar" (file upload)
 
 ## Environment Variables
 Variable	Description	Default
-``PORT	Server port	5000<br>
-NODE_ENV	Environment (development, staging, production)	development<br>
-JWT_SECRET	Secret key for JWT signing	Required<br>
-DB_HOST	MySQL host	localhost<br>
-DB_USER	MySQL username	root<br>
-DB_PASSWORD	MySQL password	(empty)<br>
-DB_NAME	MySQL database name	Required<br>
+``PORT	Server port	5000
+NODE_ENV	Environment (development, staging, production)	development
+JWT_SECRET	Secret key for JWT signing	Required
+DB_HOST	MySQL host	localhost
+DB_USER	MySQL username	root
+DB_PASSWORD	MySQL password	(empty)
+DB_NAME	MySQL database name	Required
 BASE_URL	Base URL for constructing absolute image URLs	http://localhost:5000``
 
 
