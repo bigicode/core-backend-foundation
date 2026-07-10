@@ -11,7 +11,8 @@ if(process.env.DATABASE_URL){
     user:config.db.user,
     password:config.db.password,
     database:config.db.name,
-    connectionLimit:10,
+    connectionLimit: 10,
 });
+}
 
 module.exports = pool.promise();
