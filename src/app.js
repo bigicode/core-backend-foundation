@@ -15,7 +15,9 @@ const morganStream = {
   write:(message) => logger.info(message.trim()),
 }
 
-app.use(cors());  
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://core-frontend-foundation.vercel.app']
+})); 
 app.use(express.json()); 
 
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
