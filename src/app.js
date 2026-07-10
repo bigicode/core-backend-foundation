@@ -45,6 +45,6 @@ app.get ('/health', (req, res) => {
 const errorHandler = require ('./middleware/errorHandler');
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${config.port} in ${config.env} mode`);
+app.listen(config.port, '0.0.0.0', () => {
+  logger.info(`Server running on port ${config.port} in ${config.env} mode`);
 });
